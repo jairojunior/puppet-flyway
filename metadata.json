@@ -1,0 +1,13 @@
+{
+  "name": "jairojunior-flyway",
+  "version": "0.1.0",
+  "author": "jairojunior",
+  "summary": "Puppet module manage flyway command-line tool installation and database migrations.",
+  "license": "Apache 2.0",
+  "source": "https://github.com/jairojunior/puppet-flyway.git",
+  "project_page": "https://github.com/jairojunior/puppet-flyway",
+  "issues_url": "https://github.com/jairojunior/puppet-flyway/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
