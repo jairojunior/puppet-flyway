@@ -46,6 +46,7 @@ Install Flyway commmand-line tool with default parameters:
       url       => 'jdbc:postgresql://localhost:5432/MyDB',
       user      => 'postgres',
       password  => 'postgres',
+      schemas   => 'public',
       locations => 'filesystem:/opt/sql'
     }
 
@@ -101,6 +102,10 @@ The password to use to connect to the database
 Comma-separated list of locations to scan recursively for migrations. The location type is determined by its prefix.
 Unprefixed locations or locations starting with **classpath:** point to a package on the classpath and may contain both sql and java-based migrations.
 Locations starting with **filesystem:** point to a directory on the filesystem and may only contain sql migrations.
+
+##### `schemas`
+
+Comma-separated list of schemas the migrations should be applied to.
 
 ##### `target`
 
