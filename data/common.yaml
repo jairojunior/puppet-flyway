@@ -1,0 +1,4 @@
+flyway::dirname: '/opt/flyway'
+flyway::install_cache_dir: '/var/cache/wget'
+flyway::install_source: "https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/%{lookup('flyway::version')}/flyway-commandline-%{lookup('flyaway::version')}-linux-x64.tar.gz"
+flyway::version: '5.2.0'

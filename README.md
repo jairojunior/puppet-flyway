@@ -34,9 +34,12 @@ That flyway module can install Flyway command-line tool from a URL and manage da
 
 Install Flyway commmand-line tool with default parameters:
 
-- *install_source* = 'https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/4.0/flyway-commandline-4.0-linux-x64.tar.gz',
+- *install_source* = 'https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/5.2.0/flyway-commandline-5.2.0-linux-x64.tar.gz',
 - *dirname* = '/opt/flyway',
 - *install_cache_dir* = '/var/cache/wget'
+
+_note: The default setting for flyway is the latest version of `5.2.0`.  This can be overrided by setting the hieradata key `flyway::version: '4.0'`
+for example_
 
 ## Usage
 
