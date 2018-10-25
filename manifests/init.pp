@@ -1,7 +1,9 @@
 class flyway(
-  $install_source = 'https://repo1.maven.org/maven2/org/flywaydb/flyway-commandline/4.0/flyway-commandline-4.0-linux-x64.tar.gz',
-  $dirname = '/opt/flyway',
-  $install_cache_dir = '/var/cache/wget') {
+  String $install_source,
+  String $dirname,
+  String $install_cache_dir
+)
+{
 
   ensure_packages(['wget'], {'ensure' => 'present'})
   $install_file = inline_template('<%=File.basename(URI::parse(@install_source).path)%>')
